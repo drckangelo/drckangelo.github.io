@@ -8,20 +8,24 @@
 <head>
 	<link rel="icon" data-savepage-href=""href="https://media-exp1.licdn.com/dms/image/C4E03AQF_Dfk2Mrd7PA/profile-displayphoto-shrink_400_400/0/1610710525421?e=1642636800&v=beta&t=HvQXPrWBFSigBEHavA-6irvUF4td7AxfCEUSsV2nqkw">
 	<link rel="preconnect" data-savepage-href="https://fonts.gstatic.com" href="" crossorigin="">
+	
+	
+	<script>
+		!function () { try { var d = document.documentElement; var e = localStorage.getItem('theme'); if (!e) return localStorage.setItem('theme', 'light'), d.setAttribute('data-theme', 'light'); if ("system" === e) { var t = "(prefers-color-scheme: dark)", m = window.matchMedia(t); m.media !== t || m.matches ? d.setAttribute('data-theme', 'dark') : d.setAttribute('data-theme', 'light') } else d.setAttribute('data-theme', e) } catch (e) { } }()
+	</script>
 	<meta charset="utf-8">
 	<script></script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet"
-		data-href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700;800;900&family=Libre+Caslon+Text:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;500;600;700;800;900&display=swap"
-		data-optimized-fonts="true">
+	<link rel="stylesheet" data-href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700;800;900&family=Libre+Caslon+Text:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;500;600;700;800;900&display=swap" data-optimized-fonts="true">
 	<title>Derick David - UI/UX & Product Designer</title>
 	<meta name="description" content="Inspire ambition">
 	<link rel="icon" type="image/png" data-savepage-href="/images/favicon.ico"
 		href="https://media-exp1.licdn.com/dms/image/C4E03AQF_Dfk2Mrd7PA/profile-displayphoto-shrink_400_400/0/1610710525421?e=1642636800&v=beta&t=HvQXPrWBFSigBEHavA-6irvUF4td7AxfCEUSsV2nqkw">
 	<link rel="apple-touch-icon" data-savepage-href="/images/logo@100.png" href="">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<script src="/_next/static/chunks/framework-e896e32cea60a315.js" defer=""></script>
 	<meta property="og:image" content="Images/preview-cover.jpg"/>
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Derick David - UI/UX & Product Designer">
@@ -305,6 +309,37 @@ input[type="number"] {
         font-size: 23px !important;
     }
 }
+
+@media screen and (max-width: 1023px) {
+	.navbar-menu.is-active {
+   	 display: block;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+.navbar-menu {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
+    padding: 0.5rem 0;
+}
+}
+
+.navbar-menu {
+    background-color: var(--background)!important;
+}
+
+.Navbar_navbarShadow__2BTdp {
+    background-color: var(--background-modal);
+    box-shadow: var(--shadow-navbar);
+}
+
+.navbar {
+    background-color: #fff;
+    min-height: 3.25rem;
+    position: relative;
+    z-index: 30;
+}
+
 .block-element-container:hover pre:after {
     content: "exit: ⌘↵";
     position: absolute;
@@ -395,8 +430,16 @@ input[type="number"] {
     padding: 0 0.5rem !important;
 }
 .navbar-burger {
-    width: 56px !important;
-    height: 56px !important;
+ 
+	
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    height: 3.25rem;
+    position: relative;
+    width: 3.25rem;
+    margin-left: auto;
+	opacity: 0;
 }
 .navbar-item {
     cursor: pointer;
@@ -9018,8 +9061,7 @@ a.navbar-item.is-active{color:#0a0a0a}a.navbar-item.is-active:not(:focus):not(:h
 		width: 100%
 	}
 </style><noscript data-n-css=""></noscript>
-<script defer="" nomodule=""
-	data-savepage-src="/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js"></script>
+<script defer="" nomodule="" data-savepage-src="/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js"></script>
 <script defer="" data-savepage-src="/_next/static/chunks/424.b11036fb0abf69f7112b.js"></script>
 <script defer="" data-savepage-src="/_next/static/chunks/975.e7a7acf58cc76606e729.js"></script>
 <script defer="" data-savepage-src="/_next/static/chunks/859-03b423ded54819232539.js"></script>
@@ -9034,6 +9076,40 @@ a.navbar-item.is-active{color:#0a0a0a}a.navbar-item.is-active:not(:focus):not(:h
 <script data-savepage-src="/_next/static/chunks/pages/%5Bslug%5D-95e95d2c74347f58d0e4.js" defer=""></script>
 <script data-savepage-src="/_next/static/tenlqLDI3o83td12UQPi4/_buildManifest.js" defer=""></script>
 <script data-savepage-src="/_next/static/tenlqLDI3o83td12UQPi4/_ssgManifest.js" defer=""></script>
+<script>
+	function openModal() {
+	  const modalOverlay = document.getElementById("revue-modal-overlay");
+	  modalOverlay.classList.add("modal-open");
+	  const modal = document.getElementById("revue-modal");
+	  modal.classList.add("modal-open");
+	}
+	function closeModal() {
+	  const modalOverlay = document.getElementById("revue-modal-overlay");
+	  modalOverlay.classList.remove("modal-open");
+	  const modal = document.getElementById("revue-modal");
+	  modal.classList.remove("modal-open");
+	}
+	function closeModalBackground(e) {
+	  var ev = e || window.event;
+	  if (e.target !== this) return;
+	  closeModal();
+	}
+	document
+	  .getElementById("revue-modal-overlay")
+	  .addEventListener("click", closeModalBackground);
+	document
+	  .getElementById("revue-modal-close")
+	  .addEventListener("click", closeModal);
+	Array.from(
+	  document.querySelectorAll(`[href*='#trigger-revue-modal']`)
+	).forEach((e) => {
+	  e.addEventListener("click", openModal);
+	});
+	window.addEventListener("load",() => {
+	  setTimeout(openModal, 50);
+	},false)
+  </script>
+
 <style
 	data-href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700;800;900&family=Libre+Caslon+Text:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;500;600;700;800;900&display=swap">
 	@font-face {
@@ -9188,7 +9264,7 @@ a.navbar-item.is-active{color:#0a0a0a}a.navbar-item.is-active:not(:focus):not(:h
 		<div id="__next"><div class="Home_container__1EcsU">
 			<div class="PopupNotice_popupContainer__11xqf with-danger-transparent-background-color with-danger-text-color PopupNotice_popupContainerTop__2cfO8 PopupNotice_popupContainerCenter__2nSoC"><div class="PopupNotice_icon__2yD7o"><svg viewBox="0 0 24 24" height="20" width="20" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="StyledIconBase-ea9ulj-0 bWRyML"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg></div><div class="PopupNotice_content__3kIBE"></div><div role="none" class="PopupNotice_iconClose__drVr4 with-text-color"><svg viewBox="0 0 24 24" height="20" width="20" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="StyledIconBase-ea9ulj-0 bWRyML"><line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line></svg></div></div><main class="Home_main__1x8gC"><div class="content with-text-color">
 				<!--Navigation top bar-->
-				<div class="Navbar_navbar__3Ig7j Navbar_navbarOverContainer__3dbow" style="height:60px;max-width:100vw">
+				<div class="Navbar_navbar__3Ig7j Navbar_navbarOverContainer__3dbow" style="height:60px;max-width:100vw;">
 					<nav id="td-navbar" class="navbar Navbar_navbar__3Ig7j Navbar_navbarShadow__2BTdp" role="navigation"
 						aria-label="main navigation">
 						<div class="is-flex Navbar_navbar__3Ig7j Navbar_navbarBrandCenter__21cwh">
@@ -9202,6 +9278,7 @@ a.navbar-item.is-active{color:#0a0a0a}a.navbar-item.is-active:not(:focus):not(:h
 							</div><a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
 								data-target="navbarBasicExample"><span aria-hidden="true"></span><span aria-hidden="true"></span><span
 									aria-hidden="true"></span></a>
+									
 						</div>
 						<div id="navbarBasicExample" class="navbar-menu Navbar_navbarMenuCenter__HFym7">
 							<div class="navbar-center"></div>
@@ -9233,6 +9310,9 @@ a.navbar-item.is-active{color:#0a0a0a}a.navbar-item.is-active:not(:focus):not(:h
 								<div style="height:100%;width:1.5em;min-width:1.5em"></div>
 							</div>
 						</div>
+
+
+						
 					</nav>
 				</div>
 				<div style="position:relative"><div data-gramm="false" class="editor" spellcheck="false" autocorrect="false" autocapitalize="false" data-slate-editor="true" data-slate-node="value" style="position:relative;outline:none;white-space:pre-wrap;word-wrap:break-word;display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;width:100%;min-height:800px;padding-bottom:0"><div data-slate-node="element" style="position:relative"><div contenteditable="false" class="ResizableBlockElement_container__2CkeI" style="width:700px;max-width:100%;min-height:70px;height:auto"><div class="ResizableBlockElement_contentContainer__114eR"><div class="RootElement_container__2Ekge with-text-color RootElement_resizableContainer__33n3N" contenteditable="false"><div class="SelectableElement_container__SLM8F SelectableElement_containerRoot__3MoaU selectable-container-root SelectableElement_resizableContainer__2OldI"><div data-slate-node="element" class="SpacerElement_container__2Sisq slate-spacer" style="height:70px" data-slate-height="70"><div contenteditable="false" class="SpacerElement_contentContainer__v9EUQ"></div><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-zero-width="n" data-slate-length="0">﻿<br></span></span></span></div></div></div></div></div><div contenteditable="false" class="ResizableBlockElement_container__2CkeI" style="width:700px;max-width:100%;height:auto"><div class="ResizableBlockElement_contentContainer__114eR"><div class="RootElement_container__2Ekge with-text-color" contenteditable="false"><div class="BaseElement_container__1aF4Y with-text-color options-container-trigger"><div class="SelectableElement_container__SLM8F SelectableElement_containerRoot__3MoaU selectable-container-root" style="text-align:left"><p data-slate-node="element" class="StyledElement___StyledDiv-sc-2e063k-0 esnljo slate-p"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-zero-width="n" data-slate-length="0">﻿<br></span></span></span></p></div></div></div></div></div><div contenteditable="false" class="ResizableBlockElement_container__2CkeI" style="width: 100%; max-width: 100%; height: auto; min-height: 1849.5px;"><div class="ResizableBlockElement_contentContainer__114eR"><div class="RootElement_container__2Ekge with-text-color RootElement_resizableContainer__33n3N" contenteditable="false"><div class="BaseElement_container__1aF4Y with-text-color options-container-trigger BaseElement_resizableContainer__3e_1U"><div class="SelectableElement_container__SLM8F SelectableElement_resizableContainer__2OldI" style="text-align:center;display:flex;flex-direction:row;align-items:stretch;justify-content:center"><div role="none" data-slate-node="element" class="ContainerElement_container__2SFMd slate-container" data-slate-width="1200" data-slate-height="1849.5" data-slate-width-max="100%" data-slate-align="align_center" data-slate-vertical-align="align_center" data-slate-type="container" style= "margin-top: -120px;"><div style="text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center" class="ContainerElement_contentContainer__2ylME"><div contenteditable="false" class="ResizableBlockElement_container__2CkeI" style="width:1100px;max-width:100%;height:auto"><div class="ResizableBlockElement_contentContainer__114eR"><div class="RootElement_container__2Ekge with-text-color" contenteditable="false"><div class="BaseElement_container__1aF4Y with-text-color options-container-trigger"><div class="SelectableElement_container__SLM8F" style="text-align:left"><p data-slate-node="element" class="StyledElement___StyledDiv-sc-2e063k-0 esnljo slate-p"><span data-slate-node="text"><span data-slate-leaf="true"><span data-slate-zero-width="n" data-slate-length="0">﻿<br></span></span></span></p></div></div></div></div></div><div contenteditable="false" class="ResizableBlockElement_container__2CkeI" style="width: 1100px; max-width: 100%; height: auto; min-height: 560px;"><div class="ResizableBlockElement_contentContainer__114eR"><div class="RootElement_container__2Ekge with-text-color RootElement_resizableContainer__33n3N" contenteditable="false"><div class="BaseElement_container__1aF4Y with-text-color options-container-trigger BaseElement_resizableContainer__3e_1U"><div class="SelectableElement_container__SLM8F SelectableElement_resizableContainer__2OldI" style="text-align:left"><div data-slate-node="element" class="ColumnElement_container__lwpXY slate-column ColumnElement_mobileVertical__21c53" data-slate-height="560" data-slate-width="1100"><div data-slate-node="element" class="ColumnElement_itemContainer__3bu9R slate-column_item" data-slate-width="0.5" style="width:60%"><div class="BaseElement_container__1aF4Y with-text-color options-container-trigger"><div class="SelectableElement_container__SLM8F" style="text-align:left">
